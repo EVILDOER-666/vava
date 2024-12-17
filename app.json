@@ -1,0 +1,33 @@
+{
+    "name": "media delete userbot",
+    "description": "this bot we created on;y for delete media files from a group and copy it to your channel.",
+    "repository": "https://github.com/paavampayyan/media-delete-userbot.git",
+    "keywords": [
+        "python",
+        "pyrogram"
+    ],
+    "image": "heroku/python",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "API_ID": {
+            "description": "App api_id from https://my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "App api_hash from https://my.telegram.org"
+        },
+        "SESSION_STRING": {
+            "description": "pyrogram string"
+        },
+        "GROUP_DELETE_TIME": {
+            "description": "time in seconds : 1 - 60"
+        },
+        "CHANNEL_DELETE_TIME": {
+            "description": "time in minutes : 1 - 60"
+        }
+    }
+}
